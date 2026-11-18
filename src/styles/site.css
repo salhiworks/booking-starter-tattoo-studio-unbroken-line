@@ -717,9 +717,10 @@ html.js-reveal .row[data-reveal]:not(.is-in) {
 
 /* Live facts: a ledger of three, ruled in ink. */
 .facts {
-  display: grid;
-  max-width: 40rem;
-  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--space-7);
+  max-width: min(40rem, 100%);
   margin: var(--space-2) 0 0;
   border-top: 1.5px solid var(--ink);
 }
@@ -740,6 +741,7 @@ html.js-reveal .row[data-reveal]:not(.is-in) {
 
 .facts__row dd {
   margin: 0;
+  white-space: nowrap;
   color: var(--ink);
   font-size: var(--text-fact);
   font-weight: var(--weight-medium);
@@ -2085,7 +2087,7 @@ html.js-reveal .site-footer__mark:not(.is-in) .site-footer__line path {
   }
 
   .hero__sheet {
-    left: calc(-1 * var(--space-9));
+    left: calc(-1 * var(--space-7));
     right: auto;
     bottom: var(--space-8);
     inline-size: min(56%, 19rem);
@@ -2289,7 +2291,13 @@ html.js-reveal .site-footer__mark:not(.is-in) .site-footer__line path {
   }
 
   .facts {
+    display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 0;
+  }
+
+  .facts__row dd {
+    white-space: normal;
   }
 
   .facts__row {
