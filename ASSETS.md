@@ -20,7 +20,7 @@ portray anyone in a bad light. Check the terms yourself before relying on them.
 
 | Package | Licence |
 |---|---|
-| `@profitstudio/booking-engine` 2.0.0 | MIT |
+| `@profitstudio/booking-engine` 2.0.1 | MIT |
 | `react`, `react-dom` | MIT |
 | `@fontsource-variable/syne` | OFL-1.1 (typeface) |
 | `@fontsource-variable/familjen-grotesk` | OFL-1.1 (typeface) |
